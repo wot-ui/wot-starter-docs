@@ -29,6 +29,7 @@ wot-demo 在以上开源包的基础上引入了以下开源包：
 - CI/CD：[uni-mini-ci](https://github.com/Moonofweisheng/uni-mini-ci)
 - 路由：[uni-mini-router](https://github.com/Moonofweisheng/uni-mini-router)
 - 网络请求：[Alova](https://github.com/alovajs/alova)
+- Pinia：[Pinia ](https://pinia.vuejs.org/zh/)
 
 ## 鸣谢
 

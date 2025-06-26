@@ -1,3 +1,9 @@
+---
+title: 起步
+iframe: true
+url: https://wot-demo.netlify.app/#/
+---
+
 # 起步
 
 你可以直接使用在线编辑器快速试用，或者使用终端在本地开始使用。
