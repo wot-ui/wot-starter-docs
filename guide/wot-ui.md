@@ -1,9 +1,3 @@
----
-title: UnoCSS 样式
-iframe: true
-url: https://wot-design-uni.cn/demo/
----
-
 # Wot UI
 
 Wot UI 是一个高颜值、轻量化的uni-app组件库，它基于Vue3+TS开发，提供70+高质量组件，支持暗黑模式、国际化和自定义主题。总之就是好用，爱用。它是本模板项目的组件库，当然本项目就是为它而生的。Wot UI 与 Wot Demo 团队高度重合，共享开发资源，快来使用吧。
