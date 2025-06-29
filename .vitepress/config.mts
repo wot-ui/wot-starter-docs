@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-06-26 19:07:23
+ * @LastEditTime: 2025-06-28 22:24:38
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -121,6 +121,10 @@ export default defineConfig({
           { text: '核心库', link: '/guide/uni-helper' },
           { text: '组件库', link: '/guide/wot-ui' },
           { text: '样式', link: '/guide/styling' },
+          { text: '路由', link: '/guide/router' },
+          { text: '网络请求', link: '/guide/request' },
+          { text: '状态管理', link: '/guide/state-management' },
+          { text: '全局反馈组件', link: '/guide/feedback' },
         ]
       },
     ],
