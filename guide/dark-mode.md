@@ -1,7 +1,7 @@
 ---
 title: 暗黑模式
 iframe: true
-url: https://wot-demo.netlify.app/#/pages/about/index
+url: https://wot-demo.netlify.app/#/pages/index/index
 ---
 
 # 暗黑模式
