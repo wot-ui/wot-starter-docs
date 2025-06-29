@@ -44,6 +44,16 @@ catch (error) {
 
 [Alova](https://github.com/alovajs/alova) 是一个极致高效的请求工具集，本项目已集成此方案，无需额外安装。
 
+:::danger ⚠️ 非常重要
+我们通过[@alova/wormhole](https://alova.js.org/zh-CN/tutorial/getting-started/extension-integration) 完成了编辑器扩展集成，集成 alova 的编辑器扩展可以让它展现出它更强大的力量。
+
+- 自动生成请求代码和响应数据类型，在 js 项目中也能体验对接口数据的智能提示。
+- 将 api 文档嵌入代码中，带你体验边查边用 API 的效果。
+- 定时更新 api 并主动通知前端开发，不再依赖服务端开发人员通知。
+
+但是此方案在部分小程序平台存在`globalThis`报错问题，请参考[#657](https://github.com/alovajs/alova/issues/657)，本项目通过 `AutoImport` 临时处理。
+:::
+
 ### 特性
 
 - 简单易用，[观看视频](https://alova.js.org/video-tutorial)5分钟上手。
