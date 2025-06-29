@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-06-29 15:55:54
+ * @LastEditTime: 2025-06-29 16:20:42
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -18,6 +18,9 @@ import llmstxt from 'vitepress-plugin-llms'
 export default defineConfig({
   vite: {
     plugins: [
+      llmstxt({
+        domain: 'https://wot-demo-docs.netlify.app',
+      }),
       UnoCSS(),
       viteCompression({
         verbose: true,
@@ -74,13 +77,13 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['script', {}, `
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?c77588a5308ea5813c1d46bdd849338b";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?45a448dc275714ac7c6e31b0f284124e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
     `]
   ],
   themeConfig: {
@@ -128,6 +131,7 @@ export default defineConfig({
           { text: '图标', link: '/guide/icons' },
           { text: '暗黑模式', link: '/guide/dark-mode' },
           { text: '自定义 Tabbar', link: '/guide/tabbar' },
+          { text: '部署', link: '/guide/deployment' },
         ]
       },
     ],
