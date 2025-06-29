@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-06-29 16:34:16
+ * @LastEditTime: 2025-06-29 16:37:21
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -76,6 +76,7 @@ export default defineConfig({
   description: "⚡️ 基于 vitesse-uni-app 由 vite & uni-app 驱动的、深度整合 Wot UI 组件库的快速启动模板",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'algolia-site-verification', content: '223BF8314C40C6AE' }],
     ['script', {}, `
 var _hmt = _hmt || [];
 (function() {
