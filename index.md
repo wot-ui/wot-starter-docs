@@ -15,7 +15,10 @@ hero:
       link: guide/installation
     - theme: alt
       text: 查看演示
-      link: /api-examples
+      link: https://wot-demo.netlify.app
+    - theme: brand
+      text: 🥤一杯咖啡
+      link: https://wot-design-uni.cn/reward/reward
 
 features:
   - title: Wot UI

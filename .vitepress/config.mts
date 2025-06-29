@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-06-29 16:20:42
+ * @LastEditTime: 2025-06-29 16:34:16
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -101,9 +101,9 @@ var _hmt = _hmt || [];
     search: {
       provider: 'algolia',
       options: {
-        appId: 'A74X2RFXSU',
-        apiKey: '6961856d63f5181bf71cb4fa3e4398d2',
-        indexName: 'wot-design-uni2',
+        appId: 'ITS8LMWRYB',
+        apiKey: '259280bc7bfdf1686586ed7680c68a4c',
+        indexName: 'wot-demo',
       },
     },
     footer: {
