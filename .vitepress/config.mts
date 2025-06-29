@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-06-29 16:37:21
+ * @LastEditTime: 2025-06-29 16:43:20
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -104,7 +104,7 @@ var _hmt = _hmt || [];
       options: {
         appId: 'ITS8LMWRYB',
         apiKey: '259280bc7bfdf1686586ed7680c68a4c',
-        indexName: 'wot-demo',
+        indexName: 'wot_demo_docs_netlify_app_its8lmwryb_pages',
       },
     },
     footer: {
