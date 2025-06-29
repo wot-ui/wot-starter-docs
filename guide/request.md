@@ -69,7 +69,7 @@ import { uniappAdapter } from '@alova/adapter-uniapp'
 const alova = createAlova({
   baseURL: 'https://api.example.com',
   ...uniappAdapter(),
-  responded: (response) => response.data
+  responded: response => response.data
 })
 
 // 定义请求方法
@@ -82,14 +82,14 @@ const updateUser = (data: UserInfo) => alova.Post('/user', data)
 ```typescript
 // 使用 useRequest 发送请求
 const {
-  data,           // 响应数据
-  loading,        // 加载状态
-  error,          // 错误信息
-  send,           // 手动发送请求
-  onSuccess,      // 成功回调
-  onError,        // 错误回调
+  data, // 响应数据
+  loading, // 加载状态
+  error, // 错误信息
+  send, // 手动发送请求
+  onSuccess, // 成功回调
+  onError, // 错误回调
 } = useRequest(getUserInfo('123'), {
-  immediate: true,  // 立即发送请求
+  immediate: true, // 立即发送请求
 })
 
 // 监听请求状态
@@ -107,12 +107,12 @@ onError((error) => {
 ```typescript
 // 请求去重
 const { data } = useRequest(getUserInfo('123'), {
-  shareRequest: true  // 相同请求自动去重
+  shareRequest: true // 相同请求自动去重
 })
 
 // 响应缓存
 const { data } = useRequest(getUserInfo('123'), {
-  cacheFor: 300000  // 缓存5分钟
+  cacheFor: 300000 // 缓存5分钟
 })
 
 // 分页请求
@@ -134,5 +134,30 @@ const {
   }
 )
 ```
+
+### 移除 alova
+
+如果你不需要使用 alova 作为请求库，可以按照以下步骤将其从项目中移除：
+
+1. **卸载依赖包**
+   ```bash
+   npm uninstall alova @alova/adapter-uniapp @alova/mock @alova/shared @alova/wormhole
+   # 或者使用 pnpm
+   pnpm remove alova @alova/adapter-uniapp @alova/mock @alova/shared @alova/wormhole
+   ```
+
+2. **删除相关配置文件**
+   - 删除 `src/api/` 目录下的 alova 相关配置文件
+   - 移除项目中引入 alova 的代码
+   - 移除`alova.config.ts`文件
+
+3. **替换为其他请求方案**
+   - 可以选择上述提到的 [axios](#axios)、[@uni-helper/uni-network](#uni-helperuni-network) 或直接使用 [uni-app 内置方法](#uni-app-内置方法)
+
+4. **更新相关引用**
+   - 查找并替换项目中所有使用 `useRequest`、`usePagination` 等 alova hooks 的地方
+   - 更新对应的导入语句
+
+> 💡 **提示**: 移除前建议先备份项目，确保不会影响现有功能。
 
 > 📖 **了解更多**: [Alova 官方文档](https://alova.js.org/zh-CN/)

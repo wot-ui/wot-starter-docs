@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-06-28 22:24:38
+ * @LastEditTime: 2025-06-29 14:55:38
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -125,6 +125,8 @@ export default defineConfig({
           { text: '网络请求', link: '/guide/request' },
           { text: '状态管理', link: '/guide/state-management' },
           { text: '全局反馈组件', link: '/guide/feedback' },
+          { text: '图标', link: '/guide/icons' },
+          { text: '暗黑模式', link: '/guide/dark-mode' },
         ]
       },
     ],
