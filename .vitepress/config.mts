@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-06-29 16:43:20
+ * @LastEditTime: 2025-07-16 23:30:49
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -133,6 +133,7 @@ var _hmt = _hmt || [];
           { text: '暗黑模式', link: '/guide/dark-mode' },
           { text: '自定义 Tabbar', link: '/guide/tabbar' },
           { text: '部署', link: '/guide/deployment' },
+          { text: '分包优化', link: '/guide/bundle-optimizer' }
         ]
       },
     ],
