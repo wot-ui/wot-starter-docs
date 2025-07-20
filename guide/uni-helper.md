@@ -58,6 +58,25 @@ Uni Helper 是一个旨在增强 uni-app 系列产品的开发体验为爱发电
 </template>
 ```
 
+[@uni-helper/vite-plugin-uni-pages](https://github.com/uni-helper/vite-plugin-uni-pages) 也支持配置排除指定目录的页面（例如组件目录），相对于 dir 和 subPackages，我们在`vite.config.ts`中已经做了相应的配置排除了`components`目录：  
+```ts
+// vite.config.ts
+...
+UniHelperPages({
+  dts: 'src/uni-pages.d.ts',
+  subPackages: [
+    'src/subPages',
+  ],
+  /**
+   * 排除的页面，相对于 dir 和 subPackages
+   * @default []
+   */
+  exclude: ['**/components/**/*.*'],
+})
+...
+```
+
+
 :::
 
 ## Layouts 布局

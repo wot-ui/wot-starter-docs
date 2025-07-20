@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: 快速开始
       link: guide/installation
+    - theme: brand
+      text: 咨询服务
+      link: guide/consultation
     - theme: alt
       text: 查看演示
       link: https://wot-demo.netlify.app
