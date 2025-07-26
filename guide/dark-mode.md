@@ -122,6 +122,85 @@ uni.onThemeChange((res) => {
 }
 ```
 
+## 主题管理 API
+
+本项目提供了两种主题管理方案，**推荐优先使用自动暗黑模式方案**：
+
+> 📝 **项目说明**: 本演示项目为了展示完整的主题管理功能，默认使用了 `useManualTheme()`。在实际项目中，建议根据需求选择合适的方案，大多数情况下使用 `useTheme()` 即可满足需求。
+
+### 🌙 自动暗黑模式 - `useTheme()` ⭐ 推荐
+
+**适用场景：**
+- 大多数应用的首选方案
+- 只需要系统主题适应的应用
+- 追求简洁和用户体验的应用
+
+**功能特性：**
+- ✅ 自动跟随系统主题
+- ✅ 导航栏颜色通过 theme.json 自动处理
+- ✅ 轻量级，性能优秀
+- ✅ 用户体验一致
+
+```vue
+<script setup>
+import { useTheme } from '@/composables/useTheme'
+
+const { theme, isDark, themeVars } = useTheme()
+</script>
+
+<template>
+  <wd-config-provider :theme-vars="themeVars">
+    <view :class="{ 'dark-mode': isDark }">
+      <text>当前主题: {{ theme }}</text>
+    </view>
+  </wd-config-provider>
+</template>
+```
+
+### 🎨 手动主题管理 - `useManualTheme()`
+
+**适用场景：**
+- 需要用户手动控制主题的特殊应用
+- 需要主题色自定义功能的应用
+- 需要完整主题管理功能的复杂应用
+
+**功能特性：**
+- ✅ 手动切换暗黑模式
+- ✅ 主题色选择（6种预设颜色）
+- ✅ 跟随系统主题
+- ✅ 自动同步导航栏颜色
+- ✅ 持久化用户设置
+
+> 💡 **建议**：除非有特殊需求，否则推荐使用 `useTheme()` 自动暗黑模式方案，它能提供更好的用户体验和性能表现。
+
+```vue
+<script setup>
+import { useManualTheme } from '@/composables/useManualTheme'
+
+const {
+  theme,
+  isDark,
+  toggleTheme,
+  openThemeColorPicker,
+  currentThemeColor,
+  themeVars
+} = useManualTheme()
+</script>
+
+<template>
+  <wd-config-provider :theme-vars="themeVars">
+    <view :class="{ 'dark-mode': isDark }">
+      <wd-button @click="toggleTheme">
+        切换主题
+      </wd-button>
+      <wd-button @click="openThemeColorPicker">
+        选择主题色
+      </wd-button>
+    </view>
+  </wd-config-provider>
+</template>
+```
+
 ## UI 组件适配 (Wot UI)
 
 [Wot Design Uni](https://wot-design-uni.cn/) 组件库原生支持暗黑模式，通过 `wd-config-provider` 组件可以轻松开启全局暗黑模式支持。
@@ -130,17 +209,20 @@ uni.onThemeChange((res) => {
 
 ```vue
 <!-- App.vue -->
+<script setup>
+// 根据需求选择合适的主题管理方案
+import { useTheme } from '@/composables/useTheme' // 简化版
+// 或者
+// import { useManualTheme } from '@/composables/useManualTheme' // 完整版
+
+const { theme, themeVars } = useTheme()
+</script>
+
 <template>
-  <wd-config-provider :theme="theme">
+  <wd-config-provider :theme="theme" :theme-vars="themeVars">
     <!-- 你的应用内容 -->
   </wd-config-provider>
 </template>
-
-<script setup>
-import { useTheme } from '@/composables/useTheme'
-
-const { theme } = useTheme()
-</script>
 ```
 
 ### 组件级配置
@@ -149,14 +231,15 @@ const { theme } = useTheme()
 <!-- 单个页面或组件 -->
 <template>
   <wd-config-provider theme="dark">
-    <wd-button type="primary">暗黑模式按钮</wd-button>
+    <wd-button type="primary">
+      暗黑模式按钮
+    </wd-button>
     <wd-cell title="暗黑模式单元格" />
   </wd-config-provider>
 </template>
 ```
 
 > 📖 **详细文档**: [Wot UI 暗黑模式配置](https://wot-design-uni.cn/component/config-provider.html#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F)
-
 
 ## 样式系统适配 (UnoCSS)
 
@@ -226,7 +309,7 @@ rm src/theme.json
 ### 3. 简化主题管理逻辑
 
 ```typescript
-// src/composables/useTheme.ts - 简化版本
+// src/composables/useTheme.ts - 简化版本（仅保留系统主题跟随）
 export function useTheme() {
   const currentThemeColor = ref(themeColorOptions[0])
 
@@ -241,6 +324,12 @@ export function useTheme() {
     selectThemeColor,
   }
 }
+
+// 如果需要完全移除主题功能，删除以下文件：
+// - src/composables/useTheme.ts
+// - src/composables/useManualTheme.ts
+// - src/store/themeStore.ts
+// - src/store/manualThemeStore.ts
 ```
 
 ### 4. 清理样式代码
@@ -291,6 +380,9 @@ export function useTheme() {
 ```bash
 # 删除主题相关文件
 rm src/composables/useTheme.ts
+rm src/composables/useManualTheme.ts
+rm src/store/themeStore.ts
+rm src/store/manualThemeStore.ts
 
 # 从 pages.json 中移除主题变量引用
 # 将 @navBgColor 等变量替换为具体颜色值
