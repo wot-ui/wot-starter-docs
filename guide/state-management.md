@@ -63,7 +63,7 @@ counterStore.count // 1
 
 ### 持久化配置
 
-本项目添加了一个简易插件实现 Pinia 持久化，默认持久化所有 Store 数据，如需排除某些数据，可以在 [persist](https://github.com/Moonofweisheng/wot-demo/blob/main/src/store/persist.ts) 中添加排除名单：
+本项目添加了一个简易插件实现 Pinia 持久化，默认持久化所有 Store 数据，如需排除某些数据，可以在 [persist](https://github.com/wot-ui/wot-starter/blob/main/src/store/persist.ts) 中添加排除名单：
 
 ```typescript
 // src/store/persist.ts

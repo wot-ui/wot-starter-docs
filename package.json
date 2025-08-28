@@ -1,5 +1,5 @@
 {
-  "name": "wot-demo-docs",
+  "name": "wot-starter-docs",
   "version": "1.0.0",
   "description": "基于vitesse-uni-app的深度整合 Wot UI 组件库的快速起手项目",
   "scripts": {

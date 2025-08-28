@@ -12,8 +12,8 @@ url: ''
 
 您可以使用在线编辑器在浏览器中开始试用：
 
-- [StackBlitz](https://stackblitz.com/github/Moonofweisheng/wot-demo)
-- [GitHub Template](https://github.com/Moonofweisheng/wot-demo/generate)
+- [StackBlitz](https://stackblitz.com/github/wot-ui/wot-starter)
+- [GitHub Template](https://github.com/wot-ui/wot-starter/generate)
 
 ## 本地使用
 
@@ -35,15 +35,15 @@ url: ''
 ::: code-group
 
 ```bash [create-uni]
-pnpm create uni <project-name> -t wot-demo
+pnpm create uni <project-name> -t wot-starter
 ```
 
 ```bash [degit]
-pnpx degit Moonofweisheng/wot-demo <project-name>
+pnpx degit wot-ui/wot-starter <project-name>
 ```
 
 ```bash [giget]
-pnpx giget gh:Moonofweisheng/wot-demo <project-name>
+pnpx giget gh:wot-ui/wot-starter <project-name>
 ```
 
 :::

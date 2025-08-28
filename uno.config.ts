@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-06-26 18:49:55
  * @LastEditors: weisheng
  * @Description: 
- * @FilePath: /wot-demo-docs/uno.config.ts
+ * @FilePath: /wot-starter-docs/uno.config.ts
  * 记得注释
  */
 import {

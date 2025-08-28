@@ -1,9 +1,8 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "Wot Demo"
+  name: "Wot Starter"
   text: "基于 vitesse-uni-app 深度整合 Wot UI 组件库的快速启动模板"
   tagline: 背靠 Uni Helper、Wot UI 团队，告别 HBuilderX ，拥抱现代前端开发工具链
   image:
@@ -18,7 +17,7 @@ hero:
       link: guide/consultation
     - theme: alt
       text: 查看演示
-      link: https://wot-demo.netlify.app
+      link: https://starter-demo.wot-ui.cn/#/
     - theme: brand
       text: 🥤一杯咖啡
       link: https://wot-design-uni.cn/reward/reward

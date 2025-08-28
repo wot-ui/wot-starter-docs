@@ -1,6 +1,6 @@
 # Wot UI
 
-Wot UI 是一个高颜值、轻量化的uni-app组件库，它基于Vue3+TS开发，提供70+高质量组件，支持暗黑模式、国际化和自定义主题。总之就是好用，爱用。它是本模板项目的组件库，当然本项目就是为它而生的。Wot UI 与 Wot Demo 团队高度重合，共享开发资源，快来使用吧。
+Wot UI 是一个高颜值、轻量化的uni-app组件库，它基于Vue3+TS开发，提供70+高质量组件，支持暗黑模式、国际化和自定义主题。总之就是好用，爱用。它是本模板项目的组件库，当然本项目就是为它而生的。Wot UI 与 Wot Starter 团队高度重合，共享开发资源，快来使用吧。
 
 ## 快速上手
 
@@ -61,8 +61,8 @@ Wot UI 是一个高颜值、轻量化的uni-app组件库，它基于Vue3+TS开�
 | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
 | [awesome-uni-app](https://github.com/uni-helper/awesome-uni-app)                                            | 多端统一开发框架 uni-app 优秀开发资源汇总            |
 | [create-uni](https://github.com/uni-helper/create-uni)                                                      | 快速创建 uni-app 项目                                |
-| [wot-demo](https://github.com/Moonofweisheng/wot-demo)                  | 基于 [vitesse-uni-app](https://github.com/uni-helper/vitesse-uni-app) 的wot-design-uni快速起手demo     |
-| [wot-starter-retail](https://github.com/Moonofweisheng/wot-starter-retail)                                  | 基于 wot-design-uni 的 uni-app 零售行业模板          |
+| [wot-starter](https://github.com/wot-ui/wot-starter)                  | 基于 [vitesse-uni-app](https://github.com/uni-helper/vitesse-uni-app) 的wot-design-uni快速起手demo     |
+| [wot-starter-retail](https://github.com/wot-ui/wot-starter-retail)                                  | 基于 wot-design-uni 的 uni-app 零售行业模板          |
 | [Wot UI Snippets](https://marketplace.visualstudio.com/items?itemName=kiko.wot-design-uni-snippets) | Wot UI 代码块提示                            |
 | [uni-mini-ci](https://github.com/Moonofweisheng/uni-mini-ci)                                                | 一个 uni-app 小程序端构建后支持 CI（持续集成）的插件 |
 | [uni-mini-router](https://github.com/Moonofweisheng/uni-mini-router)                                        | 一个基于 vue3 和 Typescript 的轻量级 uni-app 路由库  |

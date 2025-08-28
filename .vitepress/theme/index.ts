@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-06-26 18:48:51
  * @LastEditors: weisheng
  * @Description: 
- * @FilePath: /wot-demo-docs/.vitepress/theme/index.ts
+ * @FilePath: /wot-starter-docs/.vitepress/theme/index.ts
  * 记得注释
  */
 import { h } from 'vue'

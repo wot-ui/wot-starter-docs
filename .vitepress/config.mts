@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-07-20 23:29:20
  * @LastEditors: weisheng
  * @Description: 
- * @FilePath: /wot-demo-docs/.vitepress/config.mts
+ * @FilePath: /wot-starter-docs/.vitepress/config.mts
  * 记得注释
  */
 import { defineConfig } from 'vitepress'
@@ -19,7 +19,7 @@ export default defineConfig({
   vite: {
     plugins: [
       llmstxt({
-        domain: 'https://wot-demo-docs.netlify.app',
+        domain: 'https://wot-starter-docs.netlify.app',
       }),
       UnoCSS(),
       viteCompression({
@@ -72,7 +72,7 @@ export default defineConfig({
     
   },
   srcExclude: ['test_docs/**'],
-  title: "Wot Demo",
+  title: "Wot Starter",
   description: "⚡️ 基于 vitesse-uni-app 由 vite & uni-app 驱动的、深度整合 Wot UI 组件库的快速启动模板",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -93,11 +93,11 @@ var _hmt = _hmt || [];
       text: '最后更新'
     },
     editLink: {
-      pattern: 'https://github.com/Moonofweisheng/wot-demo-docs/edit/main/:path',
+      pattern: 'https://github.com/wot-ui/wot-starter-docs/edit/main/:path',
       text: '为此页提供修改建议',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Moonofweisheng/wot-demo' },
+      { icon: 'github', link: 'https://github.com/wot-ui/wot-starter' },
     ],
     search: {
       provider: 'algolia',
@@ -109,7 +109,7 @@ var _hmt = _hmt || [];
     },
     footer: {
       message: `Released under the MIT License.`,
-      copyright: 'Copyright © 2025-present WotDemo Team and contributors' ,
+      copyright: 'Copyright © 2025-present Wot UI Team and contributors' ,
     },
     nav: [
       { text: '首页', link: '/' },
