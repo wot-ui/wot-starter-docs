@@ -1,7 +1,7 @@
 ---
 title: 状态管理
 iframe: true
-url: https://wot-demo.netlify.app/#/pages/pinia/index
+url: pages/pinia/index
 ---
 
 # 状态管理

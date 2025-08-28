@@ -1,7 +1,7 @@
 ---
 title: 图标使用
 iframe: true
-url: https://wot-demo.netlify.app/#/pages/icon/index
+url: pages/icon/index
 ---
 
 # 图标使用

@@ -1,7 +1,7 @@
 ---
 title: UnoCSS 样式
 iframe: true
-url: https://wot-demo.netlify.app/#/pages/styles/index
+url: subPages/styles/index
 ---
 
 # 样式

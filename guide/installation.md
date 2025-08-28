@@ -1,7 +1,7 @@
 ---
 title: 起步
 iframe: true
-url: https://wot-demo.netlify.app/#/
+url: ''
 ---
 
 # 起步

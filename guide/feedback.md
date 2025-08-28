@@ -1,7 +1,7 @@
 ---
 title: 全局反馈组件
 iframe: true
-url: https://wot-demo.netlify.app/#/pages/feedback/index
+url: pages/feedback/index
 ---
 
 # 全局反馈组件

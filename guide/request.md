@@ -1,7 +1,7 @@
 ---
 title: 网络请求
 iframe: true
-url: https://wot-demo.netlify.app/#/pages/request/index
+url: pages/request/index
 ---
 
 # 网络请求

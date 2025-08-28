@@ -1,7 +1,7 @@
 ---
 title: 自定义 Tabbar
 iframe: true
-url: https://wot-demo.netlify.app/
+url: ''
 ---
 
 # 自定义 Tabbar

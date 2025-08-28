@@ -1,7 +1,7 @@
 ---
 title: 路由
 iframe: true
-url: https://wot-demo.netlify.app/#/pages/router/index
+url: pages/router/index
 ---
 
 # 路由管理

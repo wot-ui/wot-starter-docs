@@ -25,7 +25,7 @@ const expanded = ref(true)
 
 const iframeUrl = computed(() => {
   if (typeof route.data?.frontmatter?.url !== 'undefined') {
-    return route.data.frontmatter.url
+    return (import.meta.env.VITE_DEMO_BASE_URL || 'https://wot-demo.netlify.app/#/') + route.data.frontmatter.url
   }
   return ''
 })
