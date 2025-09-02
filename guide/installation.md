@@ -19,7 +19,7 @@ url: ''
 
 ### 前置依赖
 
-- **Node.js** - v18.19.0 或者更高
+- **Node.js** - v20 或者更高
 - **文本编辑器** - 推荐使用 [VS Code](https://code.visualstudio.com/) 并使用 [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) 插件
 - **终端** - 为了运行 `uni` 命令，Windows 推荐 Git Bash，Linux 和 macOS 推荐 zsh
 
