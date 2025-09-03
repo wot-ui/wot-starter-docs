@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-08-28 23:20:21
+ * @LastEditTime: 2025-09-03 21:18:34
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-starter-docs/.vitepress/config.mts
@@ -19,7 +19,7 @@ export default defineConfig({
   vite: {
     plugins: [
       llmstxt({
-        domain: import.meta.env.VITE_WEB_SITE_BASE_URL || 'https://wot-starter-docs.netlify.app',
+        domain: import.meta.env?.VITE_WEB_SITE_BASE_URL || 'https://wot-starter-docs.netlify.app',
       }),
       UnoCSS(),
       viteCompression({
