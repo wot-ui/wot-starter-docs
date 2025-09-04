@@ -58,10 +58,6 @@ watch(
       </span>
 
       <slot name="sidebar-nav-before" />
-      <!-- 添加广告位插槽 -->
-      <slot name="sidebar-ad">
-        <SidebarAds />
-      </slot>
       <VPSidebarGroup :items="sidebarGroups" :key="key" />
       <slot name="sidebar-nav-after" />
     </nav>
