@@ -1,10 +1,10 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-09-03 21:18:34
+ * @LastEditTime: 2025-09-11 23:46:18
  * @LastEditors: weisheng
  * @Description: 
- * @FilePath: /wot-starter-docs/.vitepress/config.mts
+ * @FilePath: /wot-demo-docs/.vitepress/config.mts
  * 记得注释
  */
 import { defineConfig } from 'vitepress'
@@ -134,7 +134,8 @@ var _hmt = _hmt || [];
           { text: '暗黑模式', link: '/guide/dark-mode' },
           { text: '自定义 Tabbar', link: '/guide/tabbar' },
           { text: '部署', link: '/guide/deployment' },
-          { text: '分包优化', link: '/guide/bundle-optimizer' }
+          { text: '分包优化', link: '/guide/bundle-optimizer' },
+          { text: '虚拟根组件', link: '/guide/uni-ku-root' }
         ]
       },
     ],
