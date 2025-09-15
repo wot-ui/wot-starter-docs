@@ -19,13 +19,13 @@ url: ''
 
 ### 前置依赖
 
-- **Node.js** - v20 或者更高
+- **Node.js** - v22 或者更高
 - **文本编辑器** - 推荐使用 [VS Code](https://code.visualstudio.com/) 并使用 [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) 插件
 - **终端** - 为了运行 `uni` 命令，Windows 推荐 Git Bash，Linux 和 macOS 推荐 zsh
 
 ::: details 最佳实践
 
-- **Node.js**: 总是使用偶数版本 (即 [LTS 版本](https://nodejs.org/en/about/previous-releases)，例如 18, 20)
+- **Node.js**: 总是使用偶数版本 (即 [LTS 版本](https://nodejs.org/en/about/previous-releases)，例如 20, 22)
 - **Volar**: 推荐启用 [接管模式 takeover mode](https://cn.vuejs.org/guide/typescript/overview#volar-takeover-mode)
 
 :::

@@ -20,13 +20,13 @@ hero:
       link: https://starter-demo.wot-ui.cn/#/
     - theme: brand
       text: 🥤一杯咖啡
-      link: https://wot-design-uni.cn/reward/reward
+      link: https://wot-ui.cn/reward/reward
 
 features:
   - title: Wot UI
     details: 高颜值、轻量化组件库
     icon: ⚡️
-    link: "https://wot-design-uni.cn/"
+    link: "https://wot-ui.cn/"
     linkText: "查看 WotUI"
   - title: Uni Helper 插件
     details: 核心插件库，极大提升了 uni-app 的开发体验

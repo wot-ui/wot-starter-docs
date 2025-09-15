@@ -4,28 +4,28 @@ Wot UI 是一个高颜值、轻量化的uni-app组件库，它基于Vue3+TS开�
 
 ## 快速上手
 
-请查看[快速上手](https://wot-design-uni.cn/guide/quick-use.html)文档。
+请查看[快速上手](https://wot-ui.cn/guide/quick-use.html)文档。
 
 ## 扫码体验
 
 <div style="display:flex;gap:24px">
 <div style="display: inline-block;">
-  <img style="width: 150px; height: 150px;" src="https://wot-design-uni.cn/wx.jpg" />
+  <img style="width: 150px; height: 150px;" src="https://wot-ui.cn/wx.jpg" />
   <div style="text-align: center;">微信扫码</div>
 </div>
 
 <div style="display: inline-block;">
-  <img style="width: 150px; height: 150px;" src="https://wot-design-uni.cn/alipay.png" />
+  <img style="width: 150px; height: 150px;" src="https://wot-ui.cn/alipay.png" />
   <div style="text-align: center;">支付宝扫码</div>
 </div>
 
 <div style="display: inline-block;">
-  <img style="width: 150px; height: 150px;" src="https://wot-design-uni.cn/h5.png" />
+  <img style="width: 150px; height: 150px;" src="https://wot-ui.cn/h5.png" />
   <div style="text-align: center;">浏览器扫码</div>
 </div>
 
 <div style="display: inline-block;">
-  <img style="width: 150px; height: 150px;" src="https://wot-design-uni.cn/android.png" />
+  <img style="width: 150px; height: 150px;" src="https://wot-ui.cn/android.png" />
   <div style="text-align: center;">浏览器扫码</div>
 </div>
 </div>
@@ -42,18 +42,18 @@ Wot UI 是一个高颜值、轻量化的uni-app组件库，它基于Vue3+TS开�
 
 ## 链接
 
-- [更新日志](https://wot-design-uni.cn/guide/changelog)
-- [常见问题](https://wot-design-uni.cn/guide/common-problems)
+- [更新日志](https://wot-ui.cn/guide/changelog)
+- [常见问题](https://wot-ui.cn/guide/common-problems)
 - [Discussions 讨论区](https://github.com/Moonofweisheng/wot-design-uni/discussions)
-- [互助交流群](https://wot-design-uni.cn/guide/join-group.html)
-- [优秀案例](https://wot-design-uni.cn/guide/cases)
+- [互助交流群](https://wot-ui.cn/guide/join-group.html)
+- [优秀案例](https://wot-ui.cn/guide/cases)
 
 
 ## 赞助我们
 
-如果您认为 Wot UI 帮助到了您的开发工作，您可以选择[赞助](https://wot-design-uni.cn/reward/reward.html)我们，赞助无门槛，哪怕是一杯柠檬水也好。
+如果您认为 Wot UI 帮助到了您的开发工作，您可以选择[赞助](https://wot-ui.cn/reward/reward.html)我们，赞助无门槛，哪怕是一杯柠檬水也好。
 
-捐赠后您的昵称、留言等将会展示在[捐赠榜单](https://wot-design-uni.cn/reward/donor.html)中。
+捐赠后您的昵称、留言等将会展示在[捐赠榜单](https://wot-ui.cn/reward/donor.html)中。
 
 ## 生态推荐
 
@@ -74,7 +74,7 @@ Wot UI 是一个高颜值、轻量化的uni-app组件库，它基于Vue3+TS开�
 
 - [wot-design](https://github.com/jd-ftf/wot-design-mini) - 感谢 wot-design 团队多年来的不断维护，让 wot-design-uni 能够站在巨人的肩膀上。
 - [uni-helper](https://github.com/uni-helper) - 感谢 uni-helper 团队提供的 uni-app 工具库，让 wot-design-uni 能够更方便地使用。
-- [捐赠者](https://wot-design-uni.cn/reward/donor.html) - 感谢所有捐赠者，是你们的捐赠让 wot-design-uni 能够更好地发展。
+- [捐赠者](https://wot-ui.cn/reward/donor.html) - 感谢所有捐赠者，是你们的捐赠让 wot-design-uni 能够更好地发展。
 
 ## 开源协议
 

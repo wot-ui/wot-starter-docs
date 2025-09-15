@@ -29,7 +29,7 @@ App端的暗黑模式适配，请参考 [App 端暗黑模式适配](https://unia
 暗黑模式的完整适配包含以下几个核心部分：
 
 - **uni-app 平台配置**: 开启 [DarkMode](https://uniapp.dcloud.net.cn/tutorial/darkmode.html) 官方支持
-- **UI 组件适配**: [Wot UI](https://wot-design-uni.cn/component/config-provider.html#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F) 组件库的暗黑模式支持
+- **UI 组件适配**: [Wot UI](https://wot-ui.cn/component/config-provider.html#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F) 组件库的暗黑模式支持
 - **样式系统适配**: [UnoCSS](https://unocss.dev/presets/mini#dark-mode) 暗黑模式工具类
 
 ## uni-app 平台配置
@@ -203,7 +203,7 @@ const {
 
 ## UI 组件适配 (Wot UI)
 
-[Wot Design Uni](https://wot-design-uni.cn/) 组件库原生支持暗黑模式，通过 `wd-config-provider` 组件可以轻松开启全局暗黑模式支持。
+[Wot Design Uni](https://wot-ui.cn/) 组件库原生支持暗黑模式，通过 `wd-config-provider` 组件可以轻松开启全局暗黑模式支持。
 
 ### 全局配置
 
@@ -239,7 +239,7 @@ const { theme, themeVars } = useTheme()
 </template>
 ```
 
-> 📖 **详细文档**: [Wot UI 暗黑模式配置](https://wot-design-uni.cn/component/config-provider.html#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F)
+> 📖 **详细文档**: [Wot UI 暗黑模式配置](https://wot-ui.cn/component/config-provider.html#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F)
 
 ## 样式系统适配 (UnoCSS)
 
@@ -401,4 +401,4 @@ rm src/store/manualThemeStore.ts
 
 移除后，你的应用将只使用固定的明亮主题，减少代码复杂度和包体积。
 
-> 📖 **了解更多**: [uni-app 暗黑模式适配指南](https://uniapp.dcloud.net.cn/tutorial/darkmode.html) | [wot-design-uni 主题文档](https://wot-design-uni.cn/guide/theme.html)
+> 📖 **了解更多**: [uni-app 暗黑模式适配指南](https://uniapp.dcloud.net.cn/tutorial/darkmode.html) | [wot-design-uni 主题文档](https://wot-ui.cn/guide/theme.html)

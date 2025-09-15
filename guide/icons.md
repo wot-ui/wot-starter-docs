@@ -10,7 +10,7 @@ url: pages/icon/index
 
 ## WotUI 内置图标
 
-最简单的图标使用方式是使用 [WotUI](https://wot-design-uni.cn/component/icon.html) 的内置图标。
+最简单的图标使用方式是使用 [WotUI](https://wot-ui.cn/component/icon.html) 的内置图标。
 
 ```html
 <!-- 基础用法 -->

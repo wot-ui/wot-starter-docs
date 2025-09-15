@@ -6,10 +6,10 @@ url: pages/feedback/index
 
 # 全局反馈组件
 
-基于 [WotUI](https://wot-design-uni.cn/) 组件扩展，支持在路由导航守卫和网络请求拦截器等场景使用的可全局调用的反馈组件：[GlobalLoading](#全局加载)、[GlobalMessage](#全局弹窗)、[GlobalToast](#全局提示)。 
+基于 [WotUI](https://wot-ui.cn/) 组件扩展，支持在路由导航守卫和网络请求拦截器等场景使用的可全局调用的反馈组件：[GlobalLoading](#全局加载)、[GlobalMessage](#全局弹窗)、[GlobalToast](#全局提示)。 
 
 :::tip 提示
-[WotUI](https://wot-design-uni.cn/) 组件库基于 `Provide/Inject` 实现了包括 `Toast`、`Loading`、`MessageBox` 组件在内的反馈组件的函数式调用，不过基于此实现方案，反馈组件的调用需要要确保在setup中，但是确实存在某些场景无法适用，例如：网络请求拦截器、路由导航守卫中要使用反馈组件，所以本项目基于 Pinia 与 [WotUI](https://wot-design-uni.cn/) 提供了统一的、可全局调用的反馈组件，包括 Toast、Loading、Message。
+[WotUI](https://wot-ui.cn/) 组件库基于 `Provide/Inject` 实现了包括 `Toast`、`Loading`、`MessageBox` 组件在内的反馈组件的函数式调用，不过基于此实现方案，反馈组件的调用需要要确保在setup中，但是确实存在某些场景无法适用，例如：网络请求拦截器、路由导航守卫中要使用反馈组件，所以本项目基于 Pinia 与 [WotUI](https://wot-ui.cn/) 提供了统一的、可全局调用的反馈组件，包括 Toast、Loading、Message。
 :::
 
 

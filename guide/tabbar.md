@@ -6,7 +6,7 @@ url: ''
 
 # 自定义 Tabbar
 
-本项目基于 [wot-design-uni](https://wot-design-uni.cn/) 的 `wd-tabbar` 组件，提供自定义 Tabbar 的实现。
+本项目基于 [wot-design-uni](https://wot-ui.cn/) 的 `wd-tabbar` 组件，提供自定义 Tabbar 的实现。
 
 ## 实现原理
 
@@ -66,9 +66,9 @@ interface TabbarItem {
 
 ### 图标来源
 
-项目使用 [wot-design-uni](https://wot-design-uni.cn/) 的内置图标库。你可以通过以下方式查看可用图标：
+项目使用 [wot-design-uni](https://wot-ui.cn/) 的内置图标库。你可以通过以下方式查看可用图标：
 
-1. 访问 [wot-design-uni 图标文档](https://wot-design-uni.cn/component/icon.html)
+1. 访问 [wot-design-uni 图标文档](https://wot-ui.cn/component/icon.html)
 2. 查看所有可用的图标名称
 
 ### 修改图标
@@ -179,7 +179,7 @@ const tabbarItems = ref<TabbarItem[]>([
 ])
 ```
 
-> 📖 **了解更多**: 查看 [wd-tabbar 组件文档](https://wot-design-uni.cn/component/tabbar.html) 了解更多自定义选项和插槽用法。
+> 📖 **了解更多**: 查看 [wd-tabbar 组件文档](https://wot-ui.cn/component/tabbar.html) 了解更多自定义选项和插槽用法。
 
 ## 徽标配置
 
