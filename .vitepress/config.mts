@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-09-11 23:46:18
+ * @LastEditTime: 2025-09-15 12:56:13
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -114,6 +114,8 @@ var _hmt = _hmt || [];
     nav: [
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/guide/installation' },
+      { text: 'Wot UI', link: 'https://wot-ui.cn/' },
+      { text: '博客', link: 'https://blog.wot-ui.cn/' },
       { text: 'Uni Helper', link: 'https://uni-helper.js.org/' },
     ],
     sidebar: [
