@@ -7,8 +7,6 @@ url: subEcharts/echarts/index
 
 在移动端跨平台开发中，数据可视化是一个常见需求。而 ECharts 作为百度开源的强大图表库，在 Web 端有着广泛的应用，我们在技术栈选择的时候往往倾向于选择这种应用广泛，解决方案完善的库。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/FbNXg6tP8kqX6fqCzLjPROZRD29QetkD9icwibYxnicsx1TsYksxpOXVDYuoia0cicdOxKMKlibAJhsibe2KFbGSVJWag/0?wx_fmt=png)
-
 但在 uni-app 中直接使用 ECharts 会遇到各种兼容性问题，特别是在小程序端。幸运的是，有很库可以帮助我们在 `uni-app` 中使用 `Echarts`，例如 `uni-echarts`、`lime-echart` 等插件，为我们提供了相应的解决方案。
 
 本章节中，我们将会在 wot-starter 中，探索 uni-app 接入 `Echarts` 的方案，并针对小程序，对其超级庞大的体积进行优化。
@@ -80,8 +78,6 @@ export default defineConfig({
 ### 创建一个柱状图组件
 
 让我们以项目中的 `BarChart.vue` 为例，看看如何创建一个基础的柱状图：
-
-![](https://mmbiz.qpic.cn/mmbiz_png/FbNXg6tP8kqX6fqCzLjPROZRD29QetkDjuiaLUyTCXmLic4HCrmKM0GbzGEicibYs2kChEsmIic9KADBUHnq45hbA6Q/0?wx_fmt=png)
 
 ```vue
 <script setup lang="ts">
@@ -357,29 +353,107 @@ provideEchartsTheme({
 })
 ```
 
+## 卸载步骤
+
+如果你不再需要在项目中使用 ECharts，可以按照以下步骤完全卸载相关依赖和配置：
+
+### 1. 卸载依赖包
+
+首先卸载 ECharts 相关的依赖包：
+
+```bash
+pnpm remove echarts uni-echarts
+```
+
+### 2. 清理 Vite 配置
+
+在 `vite.config.ts` 中移除 ECharts 相关的配置：
+
+```typescript
+import { defineConfig } from 'vite'
+import Uni from '@dcloudio/vite-plugin-uni'
+import UniHelperManifest from '@uni-helper/vite-plugin-uni-manifest'
+import UniHelperPages from '@uni-helper/vite-plugin-uni-pages'
+import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import UniHelperComponents from '@uni-helper/vite-plugin-uni-components'
+import AutoImport from 'unplugin-auto-import/vite'
+import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
+import { UniEchartsResolver } from 'uni-echarts/resolver' // [!code --]
+import UniKuRoot from '@uni-ku/root'
+
+export default async () => {
+  const UnoCSS = (await import('unocss/vite')).default
+
+  return defineConfig({
+    optimizeDeps: {
+      exclude: process.env.NODE_ENV === 'development' ? ['wot-design-uni', 'uni-echarts'] : [], // [!code --]
+      exclude: process.env.NODE_ENV === 'development' ? ['wot-design-uni',] : [], // [!code ++]
+    },
+    plugins: [
+      UniHelperManifest(),
+      UniHelperPages({
+        dts: 'src/uni-pages.d.ts',
+        subPackages: [
+          'src/subPages',
+        ],
+        exclude: ['**/components/**/*.*'],
+      }),
+      UniHelperLayouts(),
+      UniHelperComponents({
+        resolvers: [WotResolver(), UniEchartsResolver()], // [!code --]
+        resolvers: [WotResolver()], // [!code ++]
+        dts: 'src/components.d.ts',
+        dirs: ['src/components', 'src/business'],
+        directoryAsNamespace: true,
+      }),
+      UniKuRoot(),
+      Uni(),
+      // https://github.com/uni-ku/bundle-optimizer
+      Optimization({
+        logger: true,
+      }),
+      AutoImport({
+        imports: ['vue', '@vueuse/core', 'pinia', 'uni-app', {
+          from: 'uni-mini-router',
+          imports: ['createRouter', 'useRouter', 'useRoute'],
+        }, {
+          from: 'wot-design-uni',
+          imports: ['useToast', 'useMessage', 'useNotify', 'CommonUtil'],
+        }, {
+          from: 'alova/client',
+          imports: ['usePagination', 'useRequest'],
+        }],
+        dts: 'src/auto-imports.d.ts',
+        dirs: ['src/composables', 'src/store', 'src/utils', 'src/api'],
+        vueTemplate: true,
+      }),
+      UnoCSS(),
+    ],
+  })
+}
+```
+
+### 3. 删除相关文件和目录
+
+删除项目中与 ECharts 相关的文件和目录：
+
+```bash
+# 删除 ECharts 组件分包目录
+rm -rf src/subEcharts/
+
+# 删除异步 ECharts 演示分包目录
+rm -rf src/subAsyncEcharts/
+
+```
+
+完成以上步骤后，你的项目就完全移除了 ECharts 相关的依赖和配置，项目体积也会相应减小。
+
 ## 总结
 
 我们在 `wot-starter` 中 使用 `uni-echarts` 结合 `@uni-ku/bundle-optimizer` 为 `uni-app` 开发者提供了一个完整的高性能 ECharts 解决方案。通过合理的配置和规范的使用方式，我们可以在各个平台上实现丰富的数据可视化效果，同时保证应用的性能和用户体验。
 
-关键要点回顾：
-
-### 基础配置
-1. 安装 `echarts`、`uni-echarts` 和 `@uni-ku/bundle-optimizer` 依赖
-2. 在 vite.config.ts 中配置 UniEchartsResolver 和 Optimization 插件
-3. 在 manifest.json 中开启分包优化
-4. 在组件中调用 `provideEcharts(echarts)`
-5. 按需导入并注册 ECharts 组件
-6. 使用 `<uni-echarts>` 组件渲染图表
-
-### 性能优化
-1. 使用 `?async` 后缀实现组件异步加载
-2. 合理规划分包结构，避免主包体积过大
-3. 利用跨分包异步引用，实现代码分割
-
 ## 参考资源
 
-- wot-starter: https://starter.wot-ui.cn/
-- wot-ui: https://wot-ui.cn/
 - uni-echarts 官方文档: https://uni-echarts.xiaohe.ink
 - @uni-ku/bundle-optimizer: https://github.com/uni-ku/bundle-optimizer
 - ECharts 官方文档: https://echarts.apache.org/zh/index.html
