@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-09-15 12:56:13
+ * @LastEditTime: 2025-09-16 18:32:47
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: /wot-demo-docs/.vitepress/config.mts
@@ -137,7 +137,9 @@ var _hmt = _hmt || [];
           { text: '自定义 Tabbar', link: '/guide/tabbar' },
           { text: '部署', link: '/guide/deployment' },
           { text: '分包优化', link: '/guide/bundle-optimizer' },
-          { text: '虚拟根组件', link: '/guide/uni-ku-root' }
+          { text: '虚拟根组件', link: '/guide/uni-ku-root' },
+          { text: 'Echarts', link: '/guide/uni-echarts' }
+
         ]
       },
     ],
