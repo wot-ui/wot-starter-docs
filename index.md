@@ -13,8 +13,8 @@ hero:
       text: 快速开始
       link: guide/installation
     - theme: brand
-      text: 咨询服务
-      link: guide/consultation
+      text: 我的博客
+      link: https://blog.wot-ui.cn/
     - theme: alt
       text: 查看演示
       link: https://starter-demo.wot-ui.cn/#/
