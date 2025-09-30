@@ -58,10 +58,10 @@ features:
     icon: 😃
     link: "https://icones.js.org/"
     linkText: "查看 Icones"
-  - title: 代码质量
-    details: TypeScript & ESLint 为你保驾护航
-    icon: 🦾
-    link: "https://github.com/uni-helper/eslint-config"
-    linkText: "查看 @uni-helper/eslint-config"
+  - title: Uni ECharts
+    details: 适用于 uni-app 的 Apache ECharts 组件
+    icon: 📊
+    link: "https://uni-echarts.xiaohe.ink"
+    linkText: "查看 Uni ECharts"
 ---
 
