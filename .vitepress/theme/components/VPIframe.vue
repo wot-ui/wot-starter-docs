@@ -81,7 +81,7 @@ function onTransitionEnd() {
   position: fixed;
   z-index: 10;
   right: 32px;
-  top: calc(var(--vp-nav-height) + var(--vp-layout-top-height) + 32px);
+  top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px);
   width: 330px;
   font-size: 16px;
   background: var(--vp-c-bg-alt);
