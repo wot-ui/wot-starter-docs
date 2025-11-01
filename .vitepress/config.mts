@@ -1,10 +1,10 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-25 21:36:34
- * @LastEditTime: 2025-09-30 16:56:15
+ * @LastEditTime: 2025-11-01 17:45:13
  * @LastEditors: weisheng
  * @Description: 
- * @FilePath: /wot-demo-docs/.vitepress/config.mts
+ * @FilePath: /wot-starter-docs/.vitepress/config.mts
  * 记得注释
  */
 import { defineConfig } from 'vitepress'
@@ -124,7 +124,7 @@ var _hmt = _hmt || [];
         text: '快速开始',
         items: [
           { text: '介绍', link: '/guide/introduction' },
-          { text:'咨询', link: '/guide/consultation' },
+          { text: '咨询', link: '/guide/consultation' },
           { text: '起步', link: '/guide/installation' },
           { text: '核心库', link: '/guide/uni-helper' },
           { text: '组件库', link: '/guide/wot-ui' },
@@ -139,7 +139,8 @@ var _hmt = _hmt || [];
           { text: '部署', link: '/guide/deployment' },
           { text: '分包优化', link: '/guide/bundle-optimizer' },
           { text: '虚拟根组件', link: '/guide/uni-ku-root' },
-          { text: 'Echarts', link: '/guide/uni-echarts' }
+          { text: 'Echarts 图表', link: '/guide/uni-echarts' },
+          { text: '国际化', link: '/guide/i18n' },
 
         ]
       },
